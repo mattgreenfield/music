@@ -1,0 +1,21 @@
+<header class="site-header">
+    <div class="inner-constraint">
+
+        <!-- Site Logo / Name -->
+        <h1 class="heading heading--alpha">
+            <a class="reset-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </h1>
+
+        <!-- Main Nav -->
+        </nav>
+            {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+            {% endfor %}
+        </nav>
+
+        <p>{{ site.description }}</p>
+
+    </div>
+</header>
