@@ -60,6 +60,10 @@ body {
     background-color: #caccc9;
 }
 
+p {
+    padding-top: 0;
+}
+
 .inner-constraint {
     padding: 20px;
     margin: 0 auto;

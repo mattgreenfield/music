@@ -1,7 +1,9 @@
 ---
+review-type: gig
 title: A return to form for the boys from New York.
 artist: The Strokes
 author: ben
+layout: post
 excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 ---
 

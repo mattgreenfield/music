@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<ul class="grid"><!--
+-->{% for post in site.reviews %}
+    <li class="grid__item">
+        {% include post-summary.html %}
+    </li><!--
+    -->{% endfor %}
+</ul>

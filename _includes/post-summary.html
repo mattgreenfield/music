@@ -1,14 +1,17 @@
-<section class="content-box">
+<section class="content-box" data-review-type="{{ post.review-type }}">
     <ul class="reset-list list--inline breadcrumb">
         <li class="breadcrumb__item">
-            <a href="">Review</a>
+            <a href="{{ site.baseurl }}/{{ post.collection }}/">{{ post.collection | capitalize }}</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="{{ site.baseurl }}/{{ post.collection }}/{{ post.review-type }}s.html">{{ post.review-type }}</a>
         </li>
         <li class="breadcrumb__item">
             <a href="">{{ post.artist }}</a>
         </li>
     </ul>
     <h1 class="heading heading--gamma">
-        <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h1>
     <p>{{ post.excerpt }}</p>
     <a href="{{ site.baseurl }}{{ post.url }}">Read More.</a>
