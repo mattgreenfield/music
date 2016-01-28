@@ -29,6 +29,9 @@ body * {
 
 /* Grid */
 .grid {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     margin-left: -20px;
 }
 .grid__item {
@@ -64,6 +67,9 @@ body {
 }
 
 .page-content {
+    background: white;
+}
+.related-posts {
     background-image: url(../images/backgrounds/sprinkles/sprinkles.png);
 }
 
