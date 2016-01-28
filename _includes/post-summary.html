@@ -4,9 +4,12 @@
             <a href="">Review</a>
         </li>
         <li class="breadcrumb__item">
-            <a href="">The Strokes</a>
+            <a href="">{{ post.artist }}</a>
         </li>
     </ul>
-    <h1 class="heading heading--gamma">A return to form for the boys from New York.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h1 class="heading heading--gamma">
+        <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ site.baseurl }}/{{ post.url }}">Read More.</a>
 </section>

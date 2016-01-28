@@ -12,4 +12,9 @@ layout: default
     {{ content }}
   </div>
 
+    <footer>
+        {% assign author = site.data.people[page.author] %}
+        <p>{{ author.name }}</p>
+        <a rel="author" href="{{ author.twitter }}" title="{{ author.name }}">@{{ author.twitter }}</a>
+    </footer>
 </article>

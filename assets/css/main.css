@@ -87,6 +87,13 @@ h6 {
     letter-spacing: -1px;
     line-height: 1.3;
 }
+.heading > a {
+    color: inherit;
+    text-decoration: none;
+}
+.heading > a:hover {
+    text-decoration: underline;
+}
 
 .heading--alpha {
     font-size: 4rem;

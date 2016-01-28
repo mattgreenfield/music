@@ -3,16 +3,13 @@ layout: default
 ---
 <div class="grid">
 
-    <div class="grid__item one-third">
-        {% include post-summary.html %}
-    </div><!--
+    <ul class="grid"><!--
+    -->{% for post in site.posts %}
+        <li class="grid__item one-third">
+          {% include post-summary.html %}
+        </li><!--
+     -->{% endfor %}
+    </ul>
 
-    --><div class="grid__item one-third">
-        {% include post-summary.html %}
-    </div><!--
-
-    --><div class="grid__item one-third">
-        {% include post-summary.html %}
-    </div>
 
 </div>
