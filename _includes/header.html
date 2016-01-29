@@ -2,15 +2,28 @@
     <div class="inner-constraint">
 
         <!-- Site Logo / Name -->
-        <h1 class="heading heading--alpha">
+        <h1 class="heading heading--delta">
             <a class="reset-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
         </h1>
 
         <!-- Main Nav -->
-        </nav>
-            {% for page in site.pages %}
-                <a class="" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            {% endfor %}
+    <nav class="main-nav">
+            <ul class="reset-list list--inline">
+                {% for item in site.navigation %}<!--
+                 --><li class="menu-item {% if page.url == item.url %}menu-item--current{% endif %}">
+                        <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+                        {% if item.dropdown %}
+                            <ul class="reset-list main-nav__dropdown">
+                                {% for dropdownitem in item.dropdown %}
+                                <li>
+                                    <a class="menu-item" href="{{ dropdownitem.url | prepend: site.baseurl }}">{{ dropdownitem.title }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li><!--
+                 -->{% endfor %}
+            </ul>
         </nav>
 
     </div>

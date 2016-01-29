@@ -11,8 +11,9 @@
 ">
 
   <link rel="stylesheet" href="/music/assets/css/main.css">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
-  
+  <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css?family=Oswald|Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
+
   <link rel="canonical" href="http://yourdomain.com/music/">
 
 </head>
@@ -24,23 +25,42 @@
     <div class="inner-constraint">
 
         <!-- Site Logo / Name -->
-        <h1 class="heading heading--alpha">
+        <h1 class="heading heading--delta">
             <a class="reset-link" href="/music/">Music in Brighton</a>
         </h1>
 
         <!-- Main Nav -->
-        </nav>
-            
-                <a class="" href="/music/reviews/albums.html">Album Reviews</a>
-            
-                <a class="" href="/music/reviews/gigs.html">Gig Reviews</a>
-            
-                <a class="" href="/music/gigs/">Gigs</a>
-            
-                <a class="" href="/music/reviews/">Reviews</a>
-            
-                <a class="" href="/music/"></a>
-            
+    <nav class="main-nav">
+            <ul class="reset-list list--inline">
+                <!--
+                 --><li class="menu-item ">
+                        <a href="/music/index.html">Home</a>
+                        
+                    </li><!--
+                 --><!--
+                 --><li class="menu-item ">
+                        <a href="/music/reviews/index.html">Reviews</a>
+                        
+                            <ul class="reset-list main-nav__dropdown">
+                                
+                                <li>
+                                    <a class="menu-item" href="/music/reviews/gigs.html">Gigs</a>
+                                </li>
+                                
+                                <li>
+                                    <a class="menu-item" href="/music/reviews/albums.html">Albums</a>
+                                </li>
+                                
+                            </ul>
+                        
+                    </li><!--
+                 --><!--
+                 --><li class="menu-item ">
+                        <a href="/music/gigs/index.html">Gigs</a>
+                        
+                    </li><!--
+                 -->
+            </ul>
         </nav>
 
     </div>
@@ -65,7 +85,7 @@
         <section class="content-box" data-review-type="gig">
     <ul class="reset-list list--inline breadcrumb">
         <li class="breadcrumb__item">
-            <a href="/music/reviews/">Reviews</a>
+            <a href="/music/reviews/">Review</a>
         </li>
         <li class="breadcrumb__item">
             <a href="/music/reviews/gigs.html">Gig</a>
@@ -87,7 +107,7 @@
         <section class="content-box" data-review-type="album">
     <ul class="reset-list list--inline breadcrumb">
         <li class="breadcrumb__item">
-            <a href="/music/reviews/">Reviews</a>
+            <a href="/music/reviews/">Review</a>
         </li>
         <li class="breadcrumb__item">
             <a href="/music/reviews/albums.html">Album</a>
