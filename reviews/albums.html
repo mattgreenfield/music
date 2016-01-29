@@ -3,10 +3,5 @@ layout: default
 title: Albums
 ---
 
-<ul class="grid"><!--
--->{% for post in site.posts | where:"review-type", "album"%}
-    <li class="grid__item">
-        {% include post-summary.html %}
-    </li><!--
-    -->{% endfor %}
-</ul>
+
+{% include posts-list.html review-type="album" limit=3 %}

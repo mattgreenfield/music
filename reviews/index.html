@@ -3,10 +3,5 @@ layout: default
 title: Reviews
 ---
 
-<ul class="grid"><!--
--->{% for post in site.posts %}
-    <li class="grid__item">
-        {% include post-summary.html %}
-    </li><!--
-    -->{% endfor %}
-</ul>
+{% assign posts = site.posts %}
+{% include posts-list.html %}

@@ -13,7 +13,12 @@
         </div>
     </article>
 
-    {% include related-posts.html %}
+    <aside class="related-posts">
+        <div class="inner-constraint">
+            {% include posts-list.html limit=3 %}
+        </div>
+    </aside>
+
 
     {% include footer.html %}
 

@@ -39,9 +39,7 @@ body * {
     padding-left: 20px;
     vertical-align: top;
 }
-.one-third {
-    width: 33.333%;
-}
+
 
 /* Resets */
 .reset-list {
@@ -75,6 +73,9 @@ p {
 }
 .related-posts {
     background-image: url(../images/backgrounds/sprinkles/sprinkles.png);
+}
+.related-posts .grid__item {
+    width: 33.333%;
 }
 
 

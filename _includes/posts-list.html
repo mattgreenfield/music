@@ -1,0 +1,14 @@
+
+{% if include.review-type%}
+    {% assign posts = site.posts | limit: include.limit | where:"review-type", include.review-type %}
+{% else %}
+    {% assign posts = site.posts | limit: include.limit %}
+{% endif %}
+
+<ul class="grid"><!--
+-->{% for post in posts %}
+    <li class="grid__item">
+        {% include post-summary.html %}
+    </li><!--
+    -->{% endfor %}
+</ul>
