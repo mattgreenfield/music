@@ -8,10 +8,8 @@
 
         <!-- Main Nav -->
         </nav>
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <a class="" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% endif %}
+            {% for page in site.pages %}
+                <a class="" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             {% endfor %}
         </nav>
 

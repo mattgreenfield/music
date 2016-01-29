@@ -11,8 +11,8 @@
         </li>
     </ul>
     <h1 class="heading heading--gamma">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h1>
     <p>{{ post.excerpt }}</p>
-    <a href="{{ site.baseurl }}{{ post.url }}">Read More.</a>
+    <a href="{{ post.url | prepend: site.baseurl}}">Read More.</a>
 </section>

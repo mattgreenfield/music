@@ -1,9 +1,10 @@
 ---
 layout: default
+title: Gigs
 ---
 
 <ul class="grid"><!--
--->{% for post in site.posts | where:"type", "gig" %}
+-->{% for post in site.posts | where:"review-type", "gig" %}
     <li class="grid__item">
         {% include post-summary.html %}
     </li><!--
