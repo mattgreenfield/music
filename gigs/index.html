@@ -10,7 +10,7 @@ title: Gigs
             <ul>
                 <li>{{ gig.artist }}</li>
                 <li>{{ gig.venue }}</li>
-                <li>{{ gig.time }}</li>
+                <li>{{ gig.date | date: "%-d %B %Y" }}</li>
                 <li>{{ gig.description }}</li>
             </ul>
         </li>

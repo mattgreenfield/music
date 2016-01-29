@@ -1,11 +1,11 @@
-1:
-  artist: Me
+- id: 1
+  artist: The Strokes
   venue: concorde-2
-  time: 12:20
+  date: 12-01-16
   description: this is the gig description. maybe a link to a recent review or something important
 
-2:
-  artist: You
+- id: 2
+  artist: Coldplay
   venue: concorde-2
-  time: 21:20
+  date: 12-07-16
   description: this is the gig description. maybe a link to a recent review or something important
