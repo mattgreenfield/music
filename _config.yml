@@ -12,11 +12,6 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-# Collections
-collections:
-  reviews:
-    output: true
-
 # Defaults
 defaults:
   - scope:

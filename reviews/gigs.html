@@ -3,7 +3,7 @@ layout: default
 ---
 
 <ul class="grid"><!--
--->{% for post in site.reviews | where:"type", "gig" %}
+-->{% for post in site.posts | where:"type", "gig" %}
     <li class="grid__item">
         {% include post-summary.html %}
     </li><!--
