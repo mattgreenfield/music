@@ -11,10 +11,3 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-
-# Defaults
-defaults:
-  - scope:
-      type: "reviews"
-    values:
-      layout: "post"

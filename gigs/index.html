@@ -1,0 +1,19 @@
+---
+layout: default
+title: Gigs
+---
+
+<ul class="">
+
+    {% for gig in site.data.gigs %}
+        <li class="">
+            <ul>
+                <li>{{ gig.artist }}</li>
+                <li>{{ gig.venue }}</li>
+                <li>{{ gig.time }}</li>
+                <li>{{ gig.description }}</li>
+            </ul>
+        </li>
+    {% endfor %}
+
+</ul>
