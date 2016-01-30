@@ -1,0 +1,13 @@
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 0.4em;
+}
+.breadcrumb p {
+    margin: 0;
+}
+.breadcrumb__item:after {
+    content: "/";
+}
+.breadcrumb__item:last-child:after {
+    content: "";
+}

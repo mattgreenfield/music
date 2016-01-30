@@ -1,0 +1,17 @@
+// Post summary
+
+.post-summary {
+
+}
+.post-summary__date {
+    font-style: italic;
+    color: grey;
+}
+.post-summary__more {
+    background: $blue;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+}

@@ -1,0 +1,37 @@
+/* Related Posts */
+
+.related-posts {
+    background-image: url(../images/backgrounds/sprinkles/sprinkles.png);
+
+    .post-summary {
+        background: white;
+        padding: $base-spacing-unit;
+        margin-bottom: $base-spacing-unit;
+
+        // To position to read more button
+        position: relative;
+
+        // remove margin on last p becasue the container has padding
+        p:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    .post-summary__more {
+        // Style it
+        height: 4em;
+        width: 70px;
+        line-height: 1;
+        text-align: left;
+        padding: 11px;
+
+        // Position it bottom right
+        position: absolute;
+        right: -12px;
+        bottom: -12px;
+    }
+
+    .grid__item {
+        width: 33.333%;
+    }
+}

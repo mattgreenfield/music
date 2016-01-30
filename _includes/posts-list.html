@@ -6,9 +6,9 @@
 {% endif %}
 
 <ul class="grid"><!--
--->{% for post in posts %}
-    <li class="grid__item">
+    {% for post in posts %}
+    --><li class="grid__item">
         {% include post-summary.html %}
     </li><!--
-    -->{% endfor %}
-</ul>
+    {% endfor %}
+--></ul>

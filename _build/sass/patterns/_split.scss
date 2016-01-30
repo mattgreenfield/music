@@ -1,0 +1,33 @@
+
+// Split the container in two with text on one side and a bg image on the other, equal height
+
+.split {
+
+    display: flex;
+}
+.split__half {
+    width: 50%;
+
+    // so the items inside can be full height
+    display: flex;
+    flex-direction: column;
+
+    &--text {
+        background: white;
+    }
+    &--bg {
+        flex-grow: 1;
+        background-size: cover;
+    }
+}
+
+.split__half__content {
+    max-width: $page-content-width / 2;
+    padding: $base-spacing-unit;
+    padding-left: $base-spacing-unit * 2;
+
+    // push it to the right
+    margin-left: auto;
+
+    margin-bottom: $base-spacing-unit * 2;
+}

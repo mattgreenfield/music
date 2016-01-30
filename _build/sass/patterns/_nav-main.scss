@@ -1,0 +1,45 @@
+
+/* Main nav */
+
+.main-nav {
+
+    > .menu-item > a {
+        border-right: 1px solid;
+    }
+    > .menu-item:first-child {
+        border-left: 1px solid;
+    }
+}
+
+.menu-item {
+
+    position: relative;
+
+    a {
+        display: block;
+        text-transform: uppercase;
+        padding: 20px 10px;
+        color: inherit;
+        position: relative;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: $grey;
+    }
+}
+
+.menu-item--current {
+
+}
+.main-nav__dropdown {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    background-color: $grey;
+}
+.menu-item:hover .main-nav__dropdown {
+    top: 100%;
+    height: auto;
+}

@@ -1,0 +1,52 @@
+
+// headings
+
+.heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: .3em
+}
+.heading > a {
+    color: inherit;
+    text-decoration: none;
+}
+.heading > a:hover {
+    text-decoration: underline;
+}
+
+.heading--alpha {
+    font-size: 3.2rem;
+    letter-spacing: 2.2px;
+}
+.heading--beta {
+    font-size: 3rem;
+    letter-spacing: 1.8px;
+}
+.heading--delta {
+    font-size: 2.3rem;
+    letter-spacing: .8px;
+}
+.heading--gamma {
+    font-size: 1.9rem;
+    letter-spacing: .3px;
+}
+.heading--epsilon {
+    font-size: 1.6rem;
+    letter-spacing: .3px;
+}
+.heading--zeta {
+    font-size: 1.2rem;
+    letter-spacing: .3px;
+}
+
+/* Because markdown doesn't add the lovely heading classes */
+.post__content h1,
+.post__content h2,
+.post__content h3,
+.post__content h4,
+.post__content h5,
+.post__content h6 {
+    margin-bottom: .3em;
+    font-weight: bold;
+}
