@@ -2,9 +2,15 @@
 // Blog post / review
 
 .post {
-    max-width: 900px;
+    max-width: 850px;
 }
 .post__meta {
     font-style: italic;
     color: grey;
+}
+
+.post__footer {
+    border-top: 3px solid;
+    margin-top: $base-spacing-unit;
+    padding-top: $base-spacing-unit;
 }

@@ -6,4 +6,23 @@
         <small>Copyright 2016</small>
     </div>
 
+    <nav>
+        <ul class="reset-list list--inline">
+            {% for item in site.navigation %}<!--
+             --><li class="menu-item {% if page.url == item.url %}menu-item--current{% endif %}">
+                    <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+                    {% if item.dropdown %}
+                        <ul class="reset-list list--inline">
+                            {% for dropdownitem in item.dropdown %}
+                            <li>
+                                <a class="menu-item" href="{{ dropdownitem.url | prepend: site.baseurl }}">{{ dropdownitem.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li><!--
+             -->{% endfor %}
+        </ul>
+    </nav>
+
 </footer>

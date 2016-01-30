@@ -17,8 +17,22 @@ layout: default
     {{ content }}
     </div>
 
-    <footer>
+    <footer class="post__footer">
+        <h2 class="heading heading--zeta">The Author</h2>
         <p>{{ author.name }}</p>
         <a rel="author" href="{{ author.twitter }}" title="{{ author.name }}">@{{ author.twitter }}</a>
+
+        <h2 class="heading heading--zeta">Share</h2>
+        <ul class="reset-list list--inline">
+            <li>
+                <a href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F{{ page.url }}" target="_blank" title="Share on Facebook">Facebook</a>
+            </li>
+            <li>
+                <a href="mailto:?subject=Short%20title&body=Brief%20description:%20http%3A%2F%2F{{ page.url }}%2F">Email</a>
+            </li>
+        </ul>
     </footer>
 </article>

@@ -9,23 +9,23 @@
     > .menu-item:first-child {
         border-left: 1px solid;
     }
-}
 
-.menu-item {
+    .menu-item {
 
-    position: relative;
-
-    a {
-        display: block;
-        text-transform: uppercase;
-        padding: 20px 10px;
-        color: inherit;
         position: relative;
-        text-decoration: none;
-    }
 
-    a:hover {
-        background-color: $grey;
+        a {
+            display: block;
+            text-transform: uppercase;
+            padding: 20px 10px;
+            color: inherit;
+            position: relative;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: $grey;
+        }
     }
 }
 
