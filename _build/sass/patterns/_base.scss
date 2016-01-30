@@ -3,8 +3,8 @@
 /*base style*/
 body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    font-size: 15px;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
     color: black;
     background-color: #caccc9;
 }
@@ -13,7 +13,7 @@ $page-content-width: 1200px;
 
 
 .inner-constraint {
-    padding: 20px;
+    padding: $base-spacing-unit;
     margin: 0 auto;
     max-width: $page-content-width;
 }
@@ -25,17 +25,32 @@ $page-content-width: 1200px;
 .split {
 
     display: flex;
+}
+.split__half {
+    width: 50%;
 
-    .grid__item {
-        width: 50%;
-    }
+    // so the items inside can be full height
+    display: flex;
+    flex-direction: column;
 
-    .split__half-text {
-        max-width: $page-content-width / 2;
+    &--text {
+        background: white;
     }
-    .split__half-bg {
+    &--bg {
+        flex-grow: 1;
+        background-size: cover;
+    }
+}
 
-    }
+.split__half__content {
+    max-width: $page-content-width / 2;
+    padding: $base-spacing-unit;
+    padding-left: $base-spacing-unit * 2;
+
+    // push it to the right
+    margin-left: auto;
+
+    margin-bottom: $base-spacing-unit * 2;
 }
 
 
@@ -57,13 +72,9 @@ $page-content-width: 1200px;
     color: grey;
 }
 .post-summary__more {
-    background: #1C1C65;
+    background: $blue;
     color: white;
     display: block;
-    height: 65px;
-    width: 65px;
-    float: right;
-    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     padding: 5px;
@@ -76,8 +87,30 @@ $page-content-width: 1200px;
 
     .post-summary {
         background: white;
-        padding: 20px;
-        margin-bottom: 20px;
+        padding: $base-spacing-unit;
+        margin-bottom: $base-spacing-unit;
+
+        // To position to read more button
+        position: relative;
+
+        // remove margin on last p becasue the container has padding
+        p:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    .post-summary__more {
+        // Style it
+        height: 4em;
+        width: 70px;
+        line-height: 1;
+        text-align: left;
+        padding: 11px;
+
+        // Position it bottom right
+        position: absolute;
+        right: -12px;
+        bottom: -12px;
     }
 
     .grid__item {
@@ -103,12 +136,12 @@ $page-content-width: 1200px;
 }
 
 .heading--alpha {
-    font-size: 4rem;
-    letter-spacing: 4px;
-}
-.heading--beta {
     font-size: 3.4rem;
     letter-spacing: 2.4px;
+}
+.heading--beta {
+    font-size: 3rem;
+    letter-spacing: 1.8px;
 }
 .heading--delta {
     font-size: 2.3rem;
