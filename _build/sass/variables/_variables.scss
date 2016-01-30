@@ -1,0 +1,29 @@
+//
+// Variables
+//
+
+// Typography
+$base-font-size:    1.2rem;
+$base-line-height:  1.6;
+
+// Icons
+$base-icon-size: 30px;
+
+// Spacing
+$base-spacing-unit: $base-font-size * $base-line-height;
+
+$grid-gutter: $base-spacing-unit;
+
+$header-height: $base-font-size * 9;
+$footer-height: 250px;
+
+
+// Breakpoint Widths
+$lap-start:         670px;
+$desk-start:        1024px;
+
+// Colors
+$grey: #caccc9;
+$red: #c3322f;
+
+// Transitions
