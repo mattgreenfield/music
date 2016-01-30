@@ -7,12 +7,8 @@ title: Gigs
 
     {% for gig in site.data.gigs %}
         <li class="">
-            <ul>
-                <li>{{ gig.artist }}</li>
-                <li>{{ gig.venue }}</li>
-                <li>{{ gig.date | date: "%-d %B %Y" }}</li>
-                <li>{{ gig.description }}</li>
-            </ul>
+            <h2 class="heading heading--zeta">{{ gig.artist }}, {{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</h2>
+            <p>{{ gig.description }}</p>
         </li>
     {% endfor %}
 

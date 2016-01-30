@@ -2,6 +2,13 @@
 
 .post-summary {
 
+    // If its in the main page content, we're at a list of all posts but not the relate posts <aside>
+    .page-content & {
+        margin-bottom: $base-spacing-unit;
+        background-color: $grey;
+        background-color: rgba($grey, 0.1);
+        padding: $base-spacing-unit / 2;
+    }
 }
 .post-summary__date {
     font-style: italic;
@@ -10,7 +17,7 @@
 .post-summary__more {
     background: $blue;
     color: white;
-    display: block;
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     padding: 5px;
