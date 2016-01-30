@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    <aside class="related-posts">
+        <div class="inner-constraint">
+            <h1 class="heading heading--gamma">Latest Reviews</h1>
+            {% include posts-list.html limit=3 %}
+        </div>
+    </aside>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

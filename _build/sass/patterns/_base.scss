@@ -9,16 +9,33 @@ body {
     background-color: #caccc9;
 }
 
+$page-content-width: 1200px;
 
 
 .inner-constraint {
     padding: 20px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: $page-content-width;
 }
 
 .page-content {
     background: white;
+}
+
+.split {
+
+    display: flex;
+
+    .grid__item {
+        width: 50%;
+    }
+
+    .split__half-text {
+        max-width: $page-content-width / 2;
+    }
+    .split__half-bg {
+
+    }
 }
 
 
@@ -56,11 +73,17 @@ body {
 
 .related-posts {
     background-image: url(../images/backgrounds/sprinkles/sprinkles.png);
-}
-.related-posts .grid__item {
-    width: 33.333%;
-}
 
+    .post-summary {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .grid__item {
+        width: 33.333%;
+    }
+}
 
 
 /*headings*/
@@ -113,14 +136,6 @@ body {
 .post__content h6 {
     margin-bottom: .3em;
     font-weight: bold;
-}
-
-/* Content Box */
-
-.content-box {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
 }
 
 

@@ -132,11 +132,11 @@ gulp.task('serve', function () {
 // });
 
 // Watch for changes
-gulp.task('watch', ['serve'], function () {
+gulp.task('watch', ['sass', 'jekyll', 'serve'], function () {
 
     livereload.listen();
 
-	// run the sass and penthouse task when path.styles are changed
+	// run the sass task when path.styles are changed
     gulp.watch((paths.styles), ['sass']);
 
 	// run the scripts task when path.scripts are changed
@@ -150,4 +150,4 @@ gulp.task('watch', ['serve'], function () {
 });
 
 
-gulp.task('default', ['sass', 'jekyll', 'serve', 'watch']);
+gulp.task('default', ['watch']);
