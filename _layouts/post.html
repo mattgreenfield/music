@@ -61,8 +61,10 @@ layout: base
 
             <h2 class="heading heading--zeta">Upcoming Gigs</h2>
             <ul class="">
-                <li>gig1</li>
-                <li>gig2</li>
+                {% assign gigs = site.data.gigs | limit: 5 | where:"artist", page.artist %}
+                {% for gig in gigs %}
+                <li>{{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</li>
+                {% endfor %}
             </ul>
 
             <h2 class="heading heading--zeta">Post Tags</h2>
