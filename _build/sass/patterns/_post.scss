@@ -1,9 +1,38 @@
 
 // Blog post / review
 
+
+// Layout
+
 .post {
-    max-width: 850px;
+
 }
+
+.post__main {
+
+}
+
+.post__aside {
+
+    padding-left: $base-spacing-unit * 2;
+
+    .post-summary__breadcrumb,
+    .post-summary__excerpt,
+    .post-summary__more {
+        display: none;
+    }
+    .post-summary {
+        margin-bottom: $base-spacing-unit /2;
+    }
+    .post-summary .heading {
+        font-size: inherit;
+    }
+
+}
+
+
+
+
 .post__meta {
     font-style: italic;
     color: grey;

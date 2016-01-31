@@ -3,22 +3,20 @@
 .post-summary {
 
     // If its in the main page content, we're at a list of all posts but not the relate posts <aside>
-    .page-content & {
+    .page--category-listing & {
         margin-bottom: $base-spacing-unit;
         background-color: $grey;
         background-color: rgba($grey, 0.1);
         padding: $base-spacing-unit / 2;
+
+        &__author,
+        &__date {
+            font-style: italic;
+            color: grey;
+        }
+
+        &__more {
+            @extend %button;
+        }
     }
-}
-.post-summary__date {
-    font-style: italic;
-    color: grey;
-}
-.post-summary__more {
-    background: $blue;
-    color: white;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 5px;
 }

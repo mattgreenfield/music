@@ -5,9 +5,10 @@ layout: base
 
 <div class="page-content">
 <div class="inner-constraint">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <header class="post__header">
+    <article class="post grid" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <header class="post__header grid__item">
             <h1 class="heading heading--delta" itemprop="name headline">{{ page.title }}</h1>
             <p class="post__meta">
                 <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
@@ -15,28 +16,54 @@ layout: base
             </p>
         </header>
 
-        <div class="post__content" itemprop="articleBody">
-        {{ content }}
-        </div>
+        <div class="post__main grid__item three-fifths">
 
-        <footer class="post__footer">
-            <h2 class="heading heading--zeta">The Author</h2>
-            <p>{{ author.name }}</p>
-            <a rel="author" href="{{ author.twitter }}" title="{{ author.name }}">@{{ author.twitter }}</a>
+            <img src="{{ page.image }}" alt="">
 
-            <h2 class="heading heading--zeta">Share</h2>
-            <ul class="reset-list list--inline">
-                <li>
-                    <a href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F{{ page.url }}" target="_blank" title="Share on Facebook">Facebook</a>
-                </li>
-                <li>
-                    <a href="mailto:?subject=Short%20title&body=Brief%20description:%20http%3A%2F%2F{{ page.url }}%2F">Email</a>
-                </li>
+            <div class="post__content" itemprop="articleBody">
+                {{ content }}
+            </div>
+
+            <footer class="post__footer">
+                <h2 class="heading heading--zeta">The Author</h2>
+                <p>{{ author.name }}</p>
+                <a rel="author" href="{{ author.twitter }}" title="{{ author.name }}">@{{ author.twitter }}</a>
+
+                <h2 class="heading heading--zeta">Share</h2>
+                <ul class="reset-list list--inline">
+                    <li>
+                        <a href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F{{ page.url }}" target="_blank" title="Share on Facebook">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="mailto:?subject=Short%20title&body=Brief%20description:%20http%3A%2F%2F{{ page.url }}%2F">Email</a>
+                    </li>
+                </ul>
+
+                <h2 class="heading heading--zeta">Tags</h2>
+            </footer>
+
+        </div><!--
+        --><aside class="post__aside grid__item two-fifths">
+
+            <h2 class="heading heading--zeta">Upcoming Gigs</h2>
+            <ul class="">
+                <li>gig1</li>
+                <li>gig2</li>
             </ul>
-        </footer>
+
+            <h2 class="heading heading--zeta">Post Tags</h2>
+            <ul class="">
+                <li>tag1</li>
+                <li>tag2</li>
+            </ul>
+
+            <h2 class="heading heading--zeta">Related Reviews</h2>
+            {% include posts-list.html limit=3 %}
+
+        </aside>
 
     </article>
 

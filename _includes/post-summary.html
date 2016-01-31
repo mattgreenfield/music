@@ -1,5 +1,8 @@
-<section class="content-box post-summary" data-review-type="{{ post.review-type }}">
-    <ul class="reset-list list--inline breadcrumb">
+
+{% assign author = site.data.authors[post.author] %}
+
+<section class="post-summary" data-review-type="{{ post.review-type }}">
+    <ul class="reset-list list--inline breadcrumb post-summary__breadcrumb">
         <li class="breadcrumb__item">
             <a href="{{ site.baseurl }}/reviews/">Review</a>
         </li>
@@ -13,7 +16,8 @@
     <h1 class="heading heading--epsilon">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h1>
-    <p>{{ post.excerpt }}</p>
-    <p class="post-summary__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+    <div class="post-summary__excerpt">{{ post.excerpt }}</div>
+    <span class="post-summary__author">{{ author.name }},</span>
+    <span class="post-summary__date">{{ post.date | date: "%b %-d, %Y" }}</span>
     <a class="post-summary__more" href="{{ post.url | prepend: site.baseurl}}">Read More</a>
 </section>

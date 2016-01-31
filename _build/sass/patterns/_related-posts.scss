@@ -12,12 +12,13 @@
         position: relative;
 
         // remove margin on last p becasue the container has padding
-        p:last-of-type{
+        span:last-of-type{
             margin-bottom: 0;
         }
     }
 
     .post-summary__more {
+        @extend %button;
         // Style it
         height: 4em;
         width: 70px;

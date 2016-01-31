@@ -52,3 +52,13 @@ body {
 .site-footer {
     background: $grey;
 }
+
+
+%button {
+    background: $blue;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+}
