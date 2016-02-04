@@ -16,12 +16,12 @@ markdown: kramdown
 navigation:
   - title: Home
     url: /index.html
-  - title: Reviews
+  - title: Blog
     url: /reviews/index.html
     dropdown:
-      - title: Gigs
+      - title: Gig Reviews
         url: /reviews/gigs.html
-      - title: Albums
+      - title: Album Reviews
         url: /reviews/albums.html
   - title: Gigs
     url: /gigs/index.html
