@@ -8,13 +8,23 @@
 
 }
 
+.post__header {
+
+    .heading {
+        margin-bottom: .2em;
+    }
+    .breadcrumb {
+        margin-bottom: .7em;
+    }
+}
+
 .post__main {
 
 }
 
 .post__aside {
 
-    padding-left: $base-spacing-unit * 2;
+    padding-left: $base-spacing-unit * 2.5;
 
     // .post-summary__breadcrumb,
     .post-summary__excerpt,
@@ -36,6 +46,7 @@
 .post__meta {
     font-style: italic;
     color: grey;
+    font-size: .9em;
 }
 
 .post__footer {

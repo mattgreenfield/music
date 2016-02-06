@@ -8,19 +8,19 @@ layout: base
 
     <article class="post grid" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <header class="post__header grid__item">
-            <h1 class="heading heading--delta" itemprop="name headline">{{ page.title }}</h1>
+        <header class="post__header grid__item three-fifths">
             <ul class="reset-list list--inline breadcrumb">
                 <li class="breadcrumb__item">
-                    <a href="{{ site.baseurl }}/reviews/">Review</a>
+                    <a href="{{ site.baseurl }}/blog/">Blog</a>
                 </li>
                 <li class="breadcrumb__item">
-                    <a href="{{ site.baseurl }}/reviews/{{ page.review-type }}s.html">{{ page.review-type | capitalize }}</a>
+                    <a href="{{ site.baseurl }}/blog/{{ page.type }}s.html">{{ page.type | capitalize }}</a>
                 </li>
                 <li class="breadcrumb__item">
                     <p>{{ page.artist }}</p>
                 </li>
             </ul>
+            <h1 class="heading heading--beta" itemprop="name headline">{{ page.title }}</h1>
             <p class="post__meta">
                 <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
                 {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author.name }}</span></span>{% endif %}

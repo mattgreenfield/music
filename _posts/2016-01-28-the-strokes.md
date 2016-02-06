@@ -1,6 +1,6 @@
 ---
-review-type: gig
-title: A return to form for the boys from New York.
+type: gig-review
+title: A Return to Form For the Boys From New York.
 artist: The Strokes
 author: ben
 layout: post

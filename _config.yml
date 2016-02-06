@@ -20,8 +20,10 @@ navigation:
     url: /reviews/index.html
     dropdown:
       - title: Gig Reviews
-        url: /reviews/gigs.html
+        url: /blog/gig-reviews.html
       - title: Album Reviews
-        url: /reviews/albums.html
+        url: /blog/album-reviews.html
+      - title: Gig Previews
+        url: /blog/gig-previews.html
   - title: Gigs
     url: /gigs/index.html

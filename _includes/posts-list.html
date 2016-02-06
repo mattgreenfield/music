@@ -1,6 +1,6 @@
 
-{% if include.review-type%}
-    {% assign posts = site.posts | limit: include.limit | where:"review-type", include.review-type %}
+{% if include.type%}
+    {% assign posts = site.posts | limit: include.limit | where:"type", include.type %}
 {% else %}
     {% assign posts = site.posts | limit: include.limit %}
 {% endif %}

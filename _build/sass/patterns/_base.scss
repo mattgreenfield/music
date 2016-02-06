@@ -33,19 +33,24 @@ body {
 }
 
 .site-header {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid $grey;
 }
-.site-header .inner-constraint{
+
+.site-header .inner-constraint {
     display: flex;
     align-items: center;
 }
 .site-header__logo {
     flex-grow: 0;
 }
-.site-header nav {
+.site-header .inner-constraint > div {
     flex-grow: 1;
-    text-align: right;
 }
+.site-header .inner-constraint > nav {
+    flex-grow: 0;
+    flex-basis: 250px;
+}
+
 
 
 // Site Footer

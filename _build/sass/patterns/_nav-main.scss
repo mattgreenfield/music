@@ -3,11 +3,18 @@
 
 .main-nav {
 
+    display: flex;
+
+    .menu-item {
+        width: 33.333%;
+        text-align: center;
+    }
+
     > .menu-item > a {
-        border-right: 1px solid;
+        border-right: 1px solid $grey;
     }
     > .menu-item:first-child {
-        border-left: 1px solid;
+        border-left: 1px solid $grey;
     }
 
     .menu-item {
@@ -16,7 +23,6 @@
 
         a {
             display: block;
-            text-transform: uppercase;
             padding: 20px 10px;
             color: inherit;
             position: relative;

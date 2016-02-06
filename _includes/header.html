@@ -6,10 +6,14 @@
             <a class="reset-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
         </h1>
 
+        <div>
+            <!-- Spacer div. opps. -->
+        </div>
+
         <!-- Main Nav -->
         <nav>
-            <ul class="reset-list list--inline main-nav">
-                {% for item in site.navigation %}<!--
+            <ul class="reset-list list--inline main-nav"><!--
+                {% for item in site.navigation %}
                  --><li class="menu-item {% if page.url == item.url %}menu-item--current{% endif %}">
                         <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
                         {% if item.dropdown %}
@@ -21,9 +25,9 @@
                                 {% endfor %}
                             </ul>
                         {% endif %}
-                    </li><!--
-                 -->{% endfor %}
-            </ul>
+                    </li>
+                <!-- {% endfor %}
+            --></ul>
         </nav>
 
     </div>

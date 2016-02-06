@@ -1,6 +1,14 @@
 /* Breadcrumb */
 .breadcrumb {
-    margin-bottom: 0.4em;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 .breadcrumb p {
     margin: 0;

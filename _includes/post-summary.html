@@ -1,13 +1,13 @@
 
 {% assign author = site.data.authors[post.author] %}
 
-<section class="post-summary" data-review-type="{{ post.review-type }}">
+<section class="post-summary" data-type="{{ post.type }}">
     <ul class="reset-list list--inline breadcrumb post-summary__breadcrumb">
         <li class="breadcrumb__item">
-            <a href="{{ site.baseurl }}/reviews/">Review</a>
+            <a href="{{ site.baseurl }}/blog/">Blog</a>
         </li>
         <li class="breadcrumb__item">
-            <a href="{{ site.baseurl }}/reviews/{{ post.review-type }}s.html">{{ post.review-type | capitalize }}</a>
+            <a href="{{ site.baseurl }}/blog/{{ post.type }}s.html">{{ post.type | capitalize }}</a>
         </li>
         <li class="breadcrumb__item">
             <p>{{ post.artist }}</p>
