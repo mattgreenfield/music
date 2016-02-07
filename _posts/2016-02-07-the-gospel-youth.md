@@ -27,6 +27,9 @@ For fans of - Deaf Havana, The Gaslight Anthem.
 
 Check out their music  - [https://thegospelyouth.bandcamp.com](https://thegospelyouth.bandcamp.com)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k_3hzBZl1EY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="(https://www.youtube.com/embed/k_3hzBZl1EY)" frameborder="0" allowfullscreen></iframe>
 
 [The Gospel Youth Youtube page](https://m.youtube.com/channel/UCHq9gHa0Qq_aS6V3AQoOLGA)
+
+Feature written by Alex Macdonald
+Twitter handle: [@AlexMacdonald4](@AlexMacdonald4)
