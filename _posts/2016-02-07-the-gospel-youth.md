@@ -1,15 +1,12 @@
 ---
-type: "album-preview"
-title: "Kids-ep"
+type: "gig-preview"
+title: "The Gospel Youth"
 artist: The Gospel Youth
-author: Alex
+author: alex
 layout: post
 image: null
 published: true
 ---
-
-
-# The Gospel Youth
 
 The Gospel Youth had quite the first year, releasing their self-produced 'Kids' EP in November 2014, being chosen as main support for Deaf Havana, to playing Breakout Festival.
 
@@ -23,12 +20,9 @@ The band have a big announcement coming on the 15/2/16, and have just released i
 
 Catch them at Sticky Mikes Frog bar with Vukovi & Bad Girl Island on the 16th March 2016.
 
-For fans of - Deaf Havana, The Gaslight Anthem. 
+For fans of - Deaf Havana, The Gaslight Anthem.
 
 ### The Music
 
-Check out their music  - [https://thegospelyouth.bandcamp.com](https://thegospelyouth.bandcamp.com)
-
-<iframe width="560" height="315" src="(https://www.youtube.com/embed/k_3hzBZl1EY)" frameborder="0" allowfullscreen></iframe>
-
-[The Gospel Youth Youtube page](https://m.youtube.com/channel/UCHq9gHa0Qq_aS6V3AQoOLGA)
+[Bandcamp](https://thegospelyouth.bandcamp.com)  
+[Youtube](https://m.youtube.com/channel/UCHq9gHa0Qq_aS6V3AQoOLGA)
