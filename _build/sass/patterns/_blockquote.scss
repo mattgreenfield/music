@@ -5,3 +5,10 @@ blockquote {
     padding-left: 20px;
     border-left: 10px solid $grey;
 }
+
+blockquote p:before {
+    content: '\201C';
+    font-size: 7em;
+    line-height: 109.3px;
+    float: left;
+}

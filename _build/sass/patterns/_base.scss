@@ -13,6 +13,10 @@ body {
     margin: auto;
 }
 
+a {
+    color: teal;
+}
+
 .inner-constraint {
     padding: $base-spacing-unit;
     margin: 0 auto;
@@ -66,4 +70,12 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     padding: 5px;
+}
+
+
+%meta-text {
+
+    font-style: italic;
+    color: grey;
+    font-size: .9em;
 }

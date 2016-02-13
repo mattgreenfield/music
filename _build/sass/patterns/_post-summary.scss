@@ -2,6 +2,11 @@
 
 .post-summary {
 
+    &__author,
+    &__date {
+        @extend %meta-text;
+    }
+    
     // If its in the main page content, we're at a list of all posts but not the relate posts <aside>
     .page--category-listing & {
         margin-bottom: $base-spacing-unit;
@@ -9,11 +14,6 @@
         background-color: rgba($grey, 0.1);
         padding: $base-spacing-unit / 2;
 
-        &__author,
-        &__date {
-            font-style: italic;
-            color: grey;
-        }
 
         &__more {
             @extend %button;

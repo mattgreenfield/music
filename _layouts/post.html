@@ -37,8 +37,10 @@ layout: base
 
             <footer class="post__footer">
                 <h2 class="heading heading--zeta">The Author</h2>
-                <p>{{ author.name }}</p>
-                <a rel="author" href="{{ author.twitter }}" title="{{ author.name }}">@{{ author.twitter }}</a>
+                <p>{{ author.name }}, <a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}" target="_blank">@{{ author.twitter }}</a></p>
+
+                <!-- <h2 class="heading heading--zeta">Tags</h2> -->
+
 
                 <h2 class="heading heading--zeta">Share</h2>
                 <ul class="reset-list list--inline">
@@ -53,27 +55,29 @@ layout: base
                     </li>
                 </ul>
 
-                <h2 class="heading heading--zeta">Tags</h2>
             </footer>
 
         </div><!--
         --><aside class="post__aside grid__item two-fifths">
 
-            <h2 class="heading heading--zeta">Upcoming Gigs</h2>
-            <ul class="">
-                {% assign gigs = site.data.gigs | limit: 5 | where:"artist", page.artist %}
-                {% for gig in gigs %}
-                <li>{{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</li>
-                {% endfor %}
-            </ul>
+            {% assign gigs = site.data.gigs | limit: 5 | where:"artist", page.artist %}
+            {% if gigs != "" %}
+                <h2 class="heading heading--epsilon">Upcoming Gigs</h2>
+                <ul class="">
+                    {% for gig in gigs %}
+                    <li>{{ gig.artist }}, {{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
 
-            <h2 class="heading heading--zeta">Post Tags</h2>
+
+            <h2 class="heading heading--epsilon">Post Tags</h2>
             <ul class="">
                 <li>tag1</li>
                 <li>tag2</li>
             </ul>
 
-            <h2 class="heading heading--zeta">Related Reviews</h2>
+            <h2 class="heading heading--epsilon">Related Reviews</h2>
             {% include posts-list.html limit=3 %}
 
         </aside>

@@ -1,12 +1,12 @@
 
-{% if include.type%}
-    {% assign posts = site.posts | limit: include.limit | where:"type", include.type %}
+{% if include.type %}
+    {% assign posts = site.posts | where:"type", include.type %}
 {% else %}
-    {% assign posts = site.posts | limit: include.limit %}
+    {% assign posts = site.posts %}
 {% endif %}
 
 <ul class="grid"><!--
-    {% for post in posts %}
+    {% for post in posts limit: include.limit %}
     --><li class="grid__item">
         {% include post-summary.html %}
     </li><!--

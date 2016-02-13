@@ -32,7 +32,14 @@
         bottom: -12px;
     }
 
+    // Match grid item heights
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .grid__item {
         width: 33.333%;
+        display: flex;
     }
 }
