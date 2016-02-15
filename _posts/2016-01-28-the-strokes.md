@@ -6,6 +6,10 @@ author: ben
 layout: post
 image: thestrokes.jpeg
 excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+tags:
+  - the strokes
+  - gig review
+  - indie
 ---
 
 ## They were great

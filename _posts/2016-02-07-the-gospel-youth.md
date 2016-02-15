@@ -4,8 +4,11 @@ title: "The Gospel Youth"
 artist: The Gospel Youth
 author: alex
 layout: post
-image: gospel-youth.jpeg
-published: true
+image: gospel-youth.jpg
+tags:
+  - The Gospel Youth
+  - Gig preview
+  - Indie
 ---
 
 The Gospel Youth had quite the first year, releasing their self-produced 'Kids' EP in November 2014, being chosen as main support for Deaf Havana, to playing Breakout Festival.
@@ -22,7 +25,4 @@ Catch them at Sticky Mikes Frog bar with Vukovi & Bad Girl Island on the 16th Ma
 
 For fans of - Deaf Havana, The Gaslight Anthem.
 
-### The Music
-
-[Bandcamp](https://thegospelyouth.bandcamp.com)  
-[Youtube](https://m.youtube.com/channel/UCHq9gHa0Qq_aS6V3AQoOLGA)
+You can listen to thier music on [Bandcamp](https://thegospelyouth.bandcamp.com) and [Youtube](https://m.youtube.com/channel/UCHq9gHa0Qq_aS6V3AQoOLGA).

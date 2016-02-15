@@ -37,21 +37,22 @@ layout: base
             </div>
 
             <footer class="post__footer">
-                <h2 class="heading heading--zeta">The Author</h2>
+                <h2 class="heading heading--epsilon">The Author</h2>
                 <p>{{ author.name }}, <a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}" target="_blank">@{{ author.twitter }}</a></p>
 
-                <!-- <h2 class="heading heading--zeta">Tags</h2> -->
 
-
-                <h2 class="heading heading--zeta">Share</h2>
-                <ul class="reset-list list--inline">
-                    <li>
+                <h2 class="heading heading--epsilon">Share</h2>
+                <ul class="grid social-share">
+                    <li class="grid__item one-third">
+                        <span class="icon-twitter"></span>
                         <a href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank">Twitter</a>
-                    </li>
-                    <li>
+                    </li><!--
+                     --><li class="grid__item one-third">
+                        <span class="icon-facebook"></span>
                         <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F{{ page.url }}" target="_blank" title="Share on Facebook">Facebook</a>
-                    </li>
-                    <li>
+                    </li><!--
+                     --><li class="grid__item one-third">
+                        <span class="icon-mail"></span>
                         <a href="mailto:?subject=Short%20title&body=Brief%20description:%20http%3A%2F%2F{{ page.url }}%2F">Email</a>
                     </li>
                 </ul>
@@ -71,15 +72,12 @@ layout: base
                 </ul>
             {% endif %}
 
-
             <h2 class="heading heading--epsilon">Post Tags</h2>
             <ul class="tag-list">
-                <li>tag1</li>
-                <li>tag2</li>
+                {% for tag in page.tags %}
+                    <li>{{ tag }}</li>
+                {% endfor %}
             </ul>
-
-            <h2 class="heading heading--epsilon">Related Reviews</h2>
-            {% include posts-list.html limit=3 %}
 
         </aside>
 
@@ -87,3 +85,9 @@ layout: base
 
 </div>
 </div>
+<aside class="related-posts">
+    <div class="inner-constraint">
+        <h1 class="heading heading--gamma">Related Reviews</h1>
+        {% include posts-list.html limit="3" %}
+    </div>
+</aside>
