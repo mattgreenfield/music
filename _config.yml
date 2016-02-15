@@ -16,17 +16,7 @@ markdown: kramdown
 navigation:
   - title: Home
     url: /index.html
-  - title: Blog
-    url: /reviews/index.html
-    dropdown:
-      - title: Gig Reviews
-        url: /blog/gig-reviews.html
-      - title: Album Reviews
-        url: /blog/album-reviews.html
-      - title: Gig Previews
-        url: /blog/gig-previews.html
-  - title: Gigs
-    url: /gigs/index.html
+
 
 # Prose.io CMS settings
 prose:
