@@ -4,7 +4,7 @@ title: A Return to Form For the Boys From New York.
 artist: The Strokes
 author: ben
 layout: post
-image: http://placehold.it/700x250
+image: thestrokes.jpeg
 excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 ---
 

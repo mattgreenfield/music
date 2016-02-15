@@ -5,7 +5,15 @@
 // Layout
 
 .post {
+    max-width: 800px;
+    margin: auto;
+}
 
+.post__main,
+.post__header,
+.post__aside {
+    max-width: 700px;
+    margin: auto;
 }
 
 .post__header {
@@ -18,13 +26,8 @@
     }
 }
 
-.post__main {
-
-}
 
 .post__aside {
-
-    padding-left: $base-spacing-unit * 2.5;
 
     .post-summary__breadcrumb,
     .post-summary__excerpt,

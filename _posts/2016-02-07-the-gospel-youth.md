@@ -4,7 +4,7 @@ title: "The Gospel Youth"
 artist: The Gospel Youth
 author: alex
 layout: post
-image: null
+image: gospel-youth.jpeg
 published: true
 ---
 

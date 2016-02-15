@@ -6,9 +6,9 @@ layout: base
 <div class="page-content">
 <div class="inner-constraint">
 
-    <article class="post grid" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <header class="post__header grid__item three-fifths">
+        <header class="post__header">
             <ul class="reset-list list--inline breadcrumb">
                 <li class="breadcrumb__item">
                     <a href="{{ site.baseurl }}/blog/">Blog</a>
@@ -27,9 +27,10 @@ layout: base
             </p>
         </header>
 
-        <div class="post__main grid__item three-fifths">
+        <img class="post__image" src="{{ site.baseurl }}/assets/images/posts/{{ page.image }}" alt="">
 
-            <img src="{{ page.image }}" alt="">
+        <div class="post__main">
+
 
             <div class="post__content" itemprop="articleBody">
                 {{ content }}
@@ -58,7 +59,7 @@ layout: base
             </footer>
 
         </div><!--
-        --><aside class="post__aside grid__item two-fifths">
+        --><aside class="post__aside">
 
             {% assign gigs = site.data.gigs | limit: 5 | where:"artist", page.artist %}
             {% if gigs != "" %}
@@ -72,7 +73,7 @@ layout: base
 
 
             <h2 class="heading heading--epsilon">Post Tags</h2>
-            <ul class="">
+            <ul class="tag-list">
                 <li>tag1</li>
                 <li>tag2</li>
             </ul>
