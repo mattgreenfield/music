@@ -10,6 +10,11 @@ layout: default
         <li class="">
             {% assign author = site.data.authors[post.author] %}
             <a class="billboard__item" href="{{ post.url | prepend: site.baseurl}}" style="background-image: url({{ site.baseurl }}/assets/images/posts/{{ post.image }});">
+                <ul class="tag-list">
+                    {% for tag in post.tags limit:1 %}
+                        <li>{{ tag }}</li>
+                    {% endfor %}
+                </ul>
                 <div class="billboard__item__text">
                     <h1 class="heading heading--epsilon billboard__item__heading">{{ post.title }}</h1>
                     <span class="billboard__item__meta">{{ author.name }}, {{ post.date | date: "%b %-d, %Y" }}</span>

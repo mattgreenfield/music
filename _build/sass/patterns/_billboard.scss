@@ -26,12 +26,24 @@
     &:hover:after {
         background-color: rgba(black, 0.1);
     }
+
+    .tag-list {
+        position: absolute;
+        top: $base-spacing-unit / 2;
+        left: $base-spacing-unit / 2;
+    }
+    &:hover .tag-list li {
+        background: rgba(teal, 0.3);
+        color: white;
+        border-color: white;
+    }
 }
 
 .billboard__item__text {
     position: absolute;
     bottom: $base-spacing-unit / 2;
     left: $base-spacing-unit / 2;
+    right: $base-spacing-unit / 4; // clear the edges
 }
 
 .billboard__item__meta {
@@ -44,17 +56,36 @@
 // layout
 .billboard > ul {
 
-    height: 500px;
-
-    > li:first-child {
-        width: 70%;
-        float: left;
-        height: 100%;
+    > li {
+        width: 49%;
+        height: 250px;
+        display: inline-block;
     }
 
-    > li {
-        float: left;
-        width: 30%;
-        height: 33.33%;
+    @media (min-width: 870px) {
+
+        height: 500px;
+
+        > li:first-child {
+            width: 55%;
+            float: left;
+            height: 100%;
+        }
+
+        > li {
+            float: left;
+            width: 45%;
+            height: 33.333%;
+        }
+    }
+
+    @media (min-width: 1050px) {
+        > li:first-child {
+            width: 66.666%;
+        }
+
+        > li {
+            width: 33.333%;
+        }
     }
 }

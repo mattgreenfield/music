@@ -1,13 +1,13 @@
 ---
 type: "gig-review"
-title: "Massive Attack – Brighton Dome – 01/02/2016"
+title: "Massive Attack at the Brighton Dome"
 artist: Massive Attack
 author: ben
 layout: post
 image: null
 excerpt: Massive Attack came to the Brighton Dome on the back of their first new material in 6 years.
 tags:
-  - Massiv Attack
+  - Massive Attack
   - Gig review
   - Indie
 ---
@@ -30,4 +30,3 @@ They are due to release a second EP in Spring (2016) with an album due to arrive
 **Band website:** [http://www.massiveattack.co.uk/](http://www.massiveattack.co.uk/)
 
 **Stay up to date with their tour dates:** [http://www.songkick.com/artists/546131-massive-attack]( http://www.songkick.com/artists/546131-massive-attack)
-
