@@ -1,10 +1,15 @@
 ---
-published: false
+type: "gig-preview"
+title: "Massive Attack – Brighton Dome – 01/02/2016"
+artist: Massive Attack
+author: ben
+layout: post
+image: null
+tags:
+  - Massiv Attack
+  - Gig review
+  - Indie
 ---
-
-#Massive Attack – Brighton Dome – 01/02/2016
-
-##The Show
 
 Massive Attack came to the Brighton Dome on the back of their first new material in 6 years. Tickets for the show sold out pretty much straight away, so demand and expectation for the show was high. They didn’t disappoint.
 Ritual Spirit is their new EP which was released on January 28th 2016, and features collaborations with acts such as Azekel, Roots Manuva and Young Fathers, with the latter happening to be their support act for the evening. Young Fathers need no introduction to the Brighton music scene, having played in Brighton a few times now and also winners of the Mercury prize in 2014, which threw them into the limelight of the UK music scene and throughout the world. They were the perfect warm up act on the evening, offering a unique performance, which fitted the surroundings of the Brighton Dome. They were appreciated well by the crowd and started the evening off with a special tone. If you are not too familiar with Young Fathers material, check out a few of their songs on their Youtube channel here: [https://www.youtube.com/user/YOUNGFATHERS]( https://www.youtube.com/user/YOUNGFATHERS).
