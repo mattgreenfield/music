@@ -1,10 +1,11 @@
 ---
-type: "gig-preview"
+type: "gig-review"
 title: "Massive Attack – Brighton Dome – 01/02/2016"
 artist: Massive Attack
 author: ben
 layout: post
 image: null
+excerpt: Massive Attack came to the Brighton Dome on the back of their first new material in 6 years.
 tags:
   - Massiv Attack
   - Gig review
@@ -16,11 +17,11 @@ Ritual Spirit is their new EP which was released on January 28th 2016, and featu
 
 Massive Attack graced the stage at roughly 9pm, with their light show on par with their music. Kicking off with Battle Box 001, the force of Massive Attack’s power hit through the audience from the offset. They played through their back catalogue, with songs off 1998’s ‘Mezzanine’ drawing the greatest response from the sold out crowd. The whole of the hour and 45 minute set, went by in a flash, simply because this is an act that have been owning stages for almost 3 decades now, they know how to please a crowd. The new material was also well received, playing 3 songs from their Ritual Spirit EP. With Young Fathers in support, it seemed logical for a cameo appearance from the band on track ‘Voodoo In My Blood’ which was played during the 4 song encore at the end of the show. During the set, a stripped down version of ‘Teardrop’ was played and straight into a heavy ‘Angel’.  This showed again how Massive Attack know how to put a setlist together, as it felt like every song seamlessly flowed together. Being the first time that I had seen Massive Attack (No idea why it has taken so long, having been a fan of the band for years since my parents introduced me to them) I was in complete awe of their performance. Saying to a friend, that some acts ‘Just get it’ when it comes to performances. The stage show was perfect too, accompanying to the theme of each song. They completely met the demand and expectation of the crowd, I for one can’t wait to seem them again. I Can imagine they would be perfect to see in a festival surrounding? Anyone that has experiences of them at a festival, let us know.
 
-##What’s Next
+## What’s Next
 
 They are due to release a second EP in Spring (2016) with an album due to arrive later this year. They are also playing several festival dates in the UK and Europe this year. If you get the chance to see them, definitely take up the offer. If you already have seen them, you know that you will want to again. I will be.
 
-##Check Out
+## Check Out
 
 **Massive Attack’s Youtube/Vevo:** [https://www.youtube.com/user/MassiveAttackVEVO]( https://www.youtube.com/user/MassiveAttackVEVO)
 
