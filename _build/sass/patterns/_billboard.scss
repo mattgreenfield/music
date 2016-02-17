@@ -1,0 +1,60 @@
+// Billboard
+
+.billboard {
+
+    @extend %clearfix;
+    margin-bottom: $base-spacing-unit;
+}
+
+.billboard__item {
+    position: relative;
+    background-size: cover;
+    display: block;
+    height: 100%;
+
+    // Fallback for no background image
+    background-color: lightgrey;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:hover:after {
+        background-color: rgba(black, 0.1);
+    }
+}
+
+.billboard__item__text {
+    position: absolute;
+    bottom: $base-spacing-unit / 2;
+    left: $base-spacing-unit / 2;
+}
+
+.billboard__item__meta {
+    @extend %meta-text;
+}
+.billboard__item__heading {
+    color: white;
+}
+
+// layout
+.billboard > ul {
+
+    height: 500px;
+
+    > li:first-child {
+        width: 70%;
+        float: left;
+        height: 100%;
+    }
+
+    > li {
+        float: left;
+        width: 30%;
+        height: 33.33%;
+    }
+}

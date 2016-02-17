@@ -5,6 +5,7 @@
 // Tools
 @import "tools/visuallyhidden";
 @import "tools/reset";
+@import "tools/clearfix";
 @import "tools/img";
 @import "tools/utility";
 @import "tools/font-size-mixin";
@@ -24,6 +25,7 @@
 @import "patterns/breadcrumb";
 @import "patterns/lists";
 @import "patterns/tag";
+@import "patterns/billboard";
 @import "patterns/social";
 @import "patterns/blockquote";
 @import "patterns/post";

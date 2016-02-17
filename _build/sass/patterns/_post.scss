@@ -5,8 +5,7 @@
 // Layout
 
 .post {
-    max-width: 800px;
-    margin: auto;
+
 }
 
 .post__main,
@@ -42,6 +41,13 @@
         font-size: inherit;
     }
 
+}
+
+.post__image {
+    display: block;
+    margin: auto;
+    margin-bottom: $base-spacing-unit;
+    max-width: 800px;
 }
 
 .post__meta {

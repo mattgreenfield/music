@@ -1,10 +1,26 @@
 ---
-layout: base
+layout: default
 ---
 
 
 <div class="billboard">
-    {% include posts-list.html limit=4 %}
+
+    <ul class="reset-list">
+        {% for post in site.posts limit:4 %}
+        <li class="">
+            {% assign author = site.data.authors[post.author] %}
+            <a class="billboard__item" href="{{ post.url | prepend: site.baseurl}}" style="background-image: url({{ site.baseurl }}/assets/images/posts/{{ post.image }});">
+                <div class="billboard__item__text">
+                    <h1 class="heading heading--epsilon billboard__item__heading">{{ post.title }}</h1>
+                    <span class="billboard__item__meta">{{ author.name }}, {{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
 </div>
 
-            <p>Music in Brighton is what it says on the tin. All things that are music in Brighton. We provide you with all the latest going-on’s in our lovely city. Whether it be gig previews to showcase the great shows coming up, with the necessary links to obtain tickets. Or latest music in general that we think you should check out. We are a community of different music tastes. And the same tastes of course. But with this, we hope to have you covered for whatever genre you are interested in.</p>
+<h2 class="heading heading--delta">About</h2>
+<p>Music in Brighton is what it says on the tin. All things that are music in Brighton. We provide you with all the latest going-on’s in our lovely city. Whether it be gig previews to showcase the great shows coming up, with the necessary links to obtain tickets. Or latest music in general that we think you should check out. We are a community of different music tastes. And the same tastes of course. But with this, we hope to have you covered for whatever genre you are interested in.</p>

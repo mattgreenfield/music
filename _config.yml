@@ -16,6 +16,8 @@ markdown: kramdown
 navigation:
   - title: Home
     url: /index.html
+  - title: Blog
+    url: /blog/index.html
 
 
 # Prose.io CMS settings
