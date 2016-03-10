@@ -5,10 +5,10 @@ title: Gigs
 
 <ul class="">
 
-    {% for gig in site.data.gigs %}
+    {% for gig in site.data.gig_listings %}
         <li class="">
-            <h2 class="heading heading--zeta">{{ gig.artist }}, {{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</h2>
-            <p>{{ gig.description }}</p>
+            <h2 class="heading heading--epsilon">{{ gig.artist }}</h2>
+            <p>{{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</p>
         </li>
     {% endfor %}
 

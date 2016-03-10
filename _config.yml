@@ -19,26 +19,8 @@ navigation:
   - title: Blog
     url: /blog/index.html
 
-
-# Prose.io CMS settings
-prose:
-  rooturl: '_posts'
-  siteurl: 'http://musicinbrighton.com'
-  # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
-  media: 'assets/images/posts/'
-  metadata:
-  _posts:
-    - name: "layout"
-      field:
-        element: "hidden"
-        value: "post"
-    - name: "type"
-      field:
-        element: "select"
-        options:
-          - name: 'Gig Review'
-            value: 'gig-review'
-          - name: 'Gig Preview'
-            value: 'gig-preview'
-          - name: 'Album Review'
-            value: 'album-review'
+social-links:
+  - name: twitter
+    url: https://twitter.com/benmacdonald8
+  - name: email
+    url: mailto:gmattgreenfield@gmail.com?subject=Short%20title&body=Brief%20description:%20http%3A%2F%2F/2016/01/08/a-gig.html%2F

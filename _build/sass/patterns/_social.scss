@@ -4,4 +4,21 @@
 .social-share {
     text-align: center;
     margin-bottom: $base-spacing-unit;
+
+    a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: $base-spacing-unit / 4;
+    }
+
+    [data-social="facebook"] {
+        background: #3b5998;
+    }
+    [data-social="twitter"] {
+        background: #55acee;
+    }
+    [data-social="mail"] {
+        background: $grey;
+    }
 }

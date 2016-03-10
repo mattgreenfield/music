@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body data-page="{{ page.title | replace: " ", "-" | downcase }}">
 
     {% include header.html %}
 

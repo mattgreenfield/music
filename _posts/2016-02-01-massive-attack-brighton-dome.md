@@ -4,7 +4,7 @@ title: "Massive Attack at the Brighton Dome"
 artist: Massive Attack
 author: ben
 layout: post
-image: null
+image: massive-attack.jpeg
 excerpt: Massive Attack came to the Brighton Dome on the back of their first new material in 6 years.
 tags:
   - Massive Attack

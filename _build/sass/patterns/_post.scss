@@ -59,3 +59,14 @@
     margin-top: $base-spacing-unit;
     padding-top: $base-spacing-unit;
 }
+
+.post__author {
+    background: lightgrey;
+    padding: $base-spacing-unit / 2;
+    border-radius: 2px;
+    margin-bottom: $base-spacing-unit;
+
+    img {
+        float: left;
+    }
+}
