@@ -40,16 +40,15 @@ layout: base
                 <h2 class="heading heading--epsilon">The Author</h2>
                 <p>{{ author.name }}, <a rel="author" href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }}" target="_blank">@{{ author.twitter }}</a></p>
 
-
                 <h2 class="heading heading--epsilon">Share</h2>
                 <ul class="grid social-share">
                     <li class="grid__item one-third">
                         <span class="icon-twitter"></span>
-                        <a href="https://twitter.com/intent/tweet?text=Hello%20world" target="_blank">Twitter</a>
+                        <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20article%20on%20musicinbrighton.com%20musicinbrighton.com{{ page.url }}" target="_blank">Twitter</a>
                     </li><!--
                      --><li class="grid__item one-third">
                         <span class="icon-facebook"></span>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F{{ page.url }}" target="_blank" title="Share on Facebook">Facebook</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=musicinbrighton.com{{ page.url }}" target="_blank" title="Share on Facebook">Facebook</a>
                     </li><!--
                      --><li class="grid__item one-third">
                         <span class="icon-mail"></span>
@@ -63,21 +62,25 @@ layout: base
         --><aside class="post__aside">
 
             {% assign gigs = site.data.gigs | limit: 5 | where:"artist", page.artist %}
-            {% if gigs != "" %}
-                <h2 class="heading heading--epsilon">Upcoming Gigs</h2>
+            <h2 class="heading heading--epsilon">Upcoming Gigs</h2>
+            {% if gigs.size > 0 %}
                 <ul class="">
                     {% for gig in gigs %}
                     <li>{{ gig.artist }}, {{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</li>
                     {% endfor %}
                 </ul>
+            {% else %}
+                <p>There are no upcomming gigs for this artists. <a href="{{site.baseurl}}/gigs/index.html">Find other upcomming gigs</a> in the Brighton area.</p>
             {% endif %}
 
-            <h2 class="heading heading--epsilon">Post Tags</h2>
-            <ul class="tag-list">
-                {% for tag in page.tags %}
-                    <li>{{ tag }}</li>
-                {% endfor %}
-            </ul>
+            {% if page.tags.size > 0 %}
+                <h2 class="heading heading--epsilon">Post Tags</h2>
+                <ul class="tag-list">
+                    {% for tag in page.tags %}
+                        <li>{{ tag }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
 
         </aside>
 
