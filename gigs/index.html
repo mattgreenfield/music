@@ -1,15 +1,19 @@
 ---
 layout: default
-title: Gigs
+title: Upcoming Gigs
 ---
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
 <ul class="">
 
     {% for gig in site.data.gig_listings %}
-        <li class="">
-            <h2 class="heading heading--epsilon">{{ gig.artist }}</h2>
-            <p>{{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</p>
-        </li>
+        {% capture gigtime %}{{gig.date | date: '%s'}}{% endcapture %}
+        {% if gigtime > nowunix %}
+            <li class="">
+                <h2 class="heading heading--epsilon">{{ gig.artist }}</h2>
+                <p>{{ gig.venue }}, {{ gig.date | date: "%-d %B %Y" }}</p>
+            </li>
+        {% endif %}
     {% endfor %}
 
 </ul>
