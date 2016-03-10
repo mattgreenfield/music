@@ -18,6 +18,8 @@ navigation:
     url: /index.html
   - title: Blog
     url: /blog/index.html
+  - title: Gigs
+    url: /gigs/index.html
 
 social-links:
   - name: twitter
