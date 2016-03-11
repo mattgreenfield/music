@@ -1,5 +1,5 @@
 ---
-type: "gig-preview"
+type: gig-preview
 title: "The Gospel Youth"
 artist: The Gospel Youth
 author: alex

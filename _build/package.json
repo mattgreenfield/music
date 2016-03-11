@@ -18,7 +18,9 @@
     "gulp-a11y": "^0.1.1",
     "gulp-livereload": "^3.8.0",
     "gulp-shell": "^0.5.1",
-    "penthouse": "^0.3.2"
+    "gulp-util": "^3.0.7",
+    "penthouse": "^0.3.2",
+    "simplecrawler": "^0.6.2"
   },
   "author": "Matt Greenfield",
   "license": "ISC"

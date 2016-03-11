@@ -131,6 +131,23 @@ gulp.task('serve', function () {
 //     .pipe(a11y.reporter());
 // });
 
+
+// Task: Check for broken links
+var gutil = require('gulp-util');
+var Crawler = require('simplecrawler');
+
+gulp.task('checklinks', function(cb) {
+  Crawler.crawl('http://localhost:4000/')
+    .on('fetch404', function(queueItem, response) {
+      gutil.log('Resource not found linked from ' +
+                      queueItem.referrer + ' to', queueItem.url);
+      gutil.log('Status code: ' + response.statusCode);
+    })
+    .on('complete', function(queueItem) {
+      cb();
+    });
+});
+
 // Watch for changes
 gulp.task('watch', ['sass', 'jekyll', 'serve'], function () {
 
@@ -150,4 +167,4 @@ gulp.task('watch', ['sass', 'jekyll', 'serve'], function () {
 });
 
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['sass', 'jekyll', 'serve']);
