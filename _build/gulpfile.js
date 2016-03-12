@@ -76,7 +76,7 @@ gulp.task('sass', function () {
 // Task: Scripts
 gulp.task('scripts', function() {
     gulp.src(paths.scripts)
-    .pipe(concat('scripts.min.js'))
+    .pipe(concat('main.min.js'))
     .pipe(gulp.dest('../assets/js'));
 });
 
@@ -167,4 +167,4 @@ gulp.task('watch', ['sass', 'jekyll', 'serve'], function () {
 });
 
 
-gulp.task('default', ['sass', 'jekyll', 'serve']);
+gulp.task('default', ['sass', 'scripts', 'jekyll', 'serve']);

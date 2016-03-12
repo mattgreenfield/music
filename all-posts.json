@@ -1,0 +1,26 @@
+---
+layout: none
+---
+{
+    "posts" : [
+        {% for post in site.posts %}
+        {% assign author = site.data.authors[post.author] %}
+        {
+          "title"    : "{{ post.title | escape }}",
+          "category" : "{{ post.category }}",
+          "tags"     : "{{ post.tags | join: ', ' }}",
+          "url"      : "{{ site.baseurl }}{{ post.url }}",
+          "artist"   : "{{ post.artist }}",
+          "date"     : "{{ post.date }}",
+          "excerpt"  : {{ post.excerpt | jsonify }},
+          "type"     : "{{ post.type }}",
+          "authorname": "{{ author.name }}"
+        } {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ],
+    "pages" : [
+        {% for page in site.pages %}
+        "{{ page.url }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}

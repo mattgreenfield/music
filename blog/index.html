@@ -4,4 +4,41 @@ title: Blog Home
 ---
 
 <h1 class="heading heading--beta">{{ title }}</h1>
-{% include posts-list.html %}
+{% include posts-list.html limit=5 %}
+
+<button>Show More</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl }}"></script>
+
+
+<script>
+function postSummary(){
+    return '<li class="grid__item">'
+                + '<section class="post-summary" data-type="'+ postURLs[i].type +'">'
+                    + '<ul class="reset-list list--inline breadcrumb post-summary__breadcrumb">'
+                        + '<li class="breadcrumb__item">'
+                            + '<a href="{{ site.baseurl }}/blog/">Blog</a>'
+                        + '</li>'
+                        + '<li class="breadcrumb__item">'
+                            + '<a href="{{ site.baseurl }}/blog/'+ postURLs[i].type +'s.html">'+ postURLs[i].type +'</a>'
+                        + '</li>'
+                        + '<li class="breadcrumb__item">'
+                            + '<p>'+ postURLs[i].artist +'</p>'
+                        + '</li>'
+                    + '</ul>'
+                    + '<h1 class="heading heading--epsilon">'
+                        + '<a href="'+ postURLs[i].url +'">'+ postURLs[i].title +'</a>'
+                    + '</h1>'
+                    + '<div class="post-summary__excerpt">'+ postURLs[i].excerpt +'</div>'
+                    + '<span class="post-summary__author">'+ postURLs[i].authorname +',</span>'
+                    + '<span class="post-summary__date">'+ postURLs[i].date +'</span>'
+                    + '<a class="post-summary__more" href="'+ postURLs[i].url +'">Read More</a>'
+                + '</section>'
+            + '</li>';
+}
+$(document).ready(function(){
+
+    loadMore(5);
+});
+</script>

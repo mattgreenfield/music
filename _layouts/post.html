@@ -47,13 +47,13 @@ layout: base
                 <h2 class="heading heading--epsilon">Share</h2>
                 <ul class="grid grid--flush social-share">
                     <li class="grid__item one-third">
-                        <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20article%20on%20musicinbrighton.com%20musicinbrighton.com{{ page.url }}" target="_blank" data-social="twitter"><span class="icon-twitter"></span> Twitter</a>
+                        <a href="https://twitter.com/intent/tweet?text={{ "Check out this awesome post on MusicInBrighton.com" | url_escape }}%20{{ page.url }}" target="_blank" data-social="twitter"><span class="icon-twitter"></span> Twitter</a>
                     </li><!--
                      --><li class="grid__item one-third">
                             <a href="https://www.facebook.com/sharer/sharer.php?u=musicinbrighton.com{{ page.url }}" target="_blank" title="Share on Facebook" data-social="facebook"><span class="icon-facebook"></span> Facebook</a>
                     </li><!--
                      --><li class="grid__item one-third">
-                            <a href="mailto:?subject=Short%20title&body=Brief%20description:%20http%3A%2F%2F{{ page.url }}%2F" data-social="mail"><span class="icon-mail"></span> Email</a>
+                            <a href="mailto:?subject={{ "Check out this awesome post on MusicInBrighton.com" | url_escape }}&body={{ "Check out this awesome post on MusicInBrighton.com" | url_escape }}%20{{ page.url }}" data-social="mail"><span class="icon-mail"></span> Email</a>
                     </li>
                 </ul>
 
