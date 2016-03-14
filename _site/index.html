@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+    <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +28,9 @@
 </head>
 
 
-  <body data-page="">
+    <body data-page="">
 
-    <header class="site-header">
+        <header class="site-header">
     <div class="inner-constraint">
 
         <!-- Site Logo / Name -->
@@ -64,13 +64,17 @@
                     </li>
                 <!-- 
             --></ul>
+            <!-- <div id="search-container">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+            </div> -->
         </nav>
 
     </div>
 </header>
 
 
-    <article class="page-content">
+        <article class="page-content">
     <div class="inner-constraint">
         <h1 class="heading heading--delta"></h1>
         <div class="billboard">
@@ -152,7 +156,7 @@
 </article>
 
 
-    <footer class="site-footer">
+        <footer class="site-footer">
 
     <div class="inner-constraint">
         <h2 class="heading heading--gamma">Music in Brighton</h2>
@@ -192,6 +196,21 @@
 </footer>
 
 
-  </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="/assets/js/main.min.js"></script>
+        <script>
+        $(document).ready(function(){
+
+            
+
+            SimpleJekyllSearch({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '/all-posts.json',
+            });
+        });
+        </script>
+
+    </body>
 
 </html>
