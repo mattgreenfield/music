@@ -1,7 +1,8 @@
 /* Related Posts */
 
 .related-posts {
-    background-image: url(../images/backgrounds/sprinkles/sprinkles.png);
+
+    background-color: grey;
 
     .post-summary {
         background: white;
@@ -17,29 +18,17 @@
         }
     }
 
-    .post-summary__more {
-        @extend %button;
-        // Style it
-        height: 4em;
-        width: 70px;
-        line-height: 1;
-        text-align: left;
-        padding: 11px;
+    @media (min-width: 1000px) {
 
-        // Position it bottom right
-        position: absolute;
-        right: -12px;
-        bottom: -12px;
-    }
+        // Match grid item heights
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    // Match grid item heights
-    .grid {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .grid__item {
-        width: 33.333%;
-        display: flex;
+        .grid__item {
+            width: 33.333%;
+            display: flex;
+        }
     }
 }

@@ -6,17 +6,43 @@
     &__date {
         @extend %meta-text;
     }
-    
-    // If its in the main page content, we're at a list of all posts but not the relate posts <aside>
-    .page--category-listing & {
-        margin-bottom: $base-spacing-unit;
-        background-color: $grey;
-        background-color: rgba($grey, 0.1);
-        padding: $base-spacing-unit / 2;
+
+}
 
 
-        &__more {
-            @extend %button;
+
+// PAGES
+
+.page-content {
+
+    .inner-constraint > h1 {
+        margin-bottom: 1em;
+    }
+
+    .post-summary {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        border-bottom: 1px solid;
+        padding-bottom: 10px;
+    }
+
+    // Layout
+    @media (min-width: 620px) {
+
+        .post-summary {
+            display: flex;
+            flex-direction: row-reverse;
+
+            &__text {
+                flex-grow: 1;
+            }
+
+            &__image {
+                margin-left: $base-spacing-unit;
+                flex-basis: 200px;
+                flex-shrink: 0;
+            }
         }
     }
+
 }

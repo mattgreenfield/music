@@ -1,23 +1,31 @@
 
 {% assign author = site.data.authors[post.author] %}
 
-<section class="post-summary" data-type="{{ post.type }}" style="background-image: url({{ site.baseurl }}/assets/images/posts/{{ post.image }});">
-    <ul class="reset-list list--inline breadcrumb post-summary__breadcrumb">
-        <li class="breadcrumb__item">
-            <a href="{{ site.baseurl }}/blog/">Blog</a>
-        </li>
-        <li class="breadcrumb__item">
-            <a href="{{ site.baseurl }}/blog/{{ post.type }}s.html">{{ post.type | capitalize }}</a>
-        </li>
-        <li class="breadcrumb__item">
-            <p>{{ post.artist }}</p>
-        </li>
-    </ul>
-    <h1 class="heading heading--epsilon">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h1>
-    <div class="post-summary__excerpt">{{ post.excerpt }}</div>
-    <span class="post-summary__author">{{ author.name }},</span>
-    <span class="post-summary__date">{{ post.date | date: "%b %-d, %Y" }}</span>
-    <a class="post-summary__more" href="{{ post.url | prepend: site.baseurl}}">Read More</a>
+<section class="post-summary" data-type="{{ post.type }}">
+
+    <div class="post-summary__image">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <img src="{{ site.baseurl }}/assets/images/posts/{{ post.image }}" alt="">
+        </a>
+    </div>
+    <div class="post-summary__text">
+        <ul class="reset-list list--inline breadcrumb post-summary__breadcrumb">
+            <li class="breadcrumb__item">
+                <a href="{{ site.baseurl }}/blog/">Blog</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a href="{{ site.baseurl }}/blog/{{ post.type }}s.html">{{ post.type | capitalize }}</a>
+            </li>
+            <li class="breadcrumb__item">
+                <p>{{ post.artist }}</p>
+            </li>
+        </ul>
+        <h1 class="heading heading--epsilon">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h1>
+        <div class="post-summary__excerpt">{{ post.excerpt }}</div>
+        <span class="post-summary__author">{{ author.name }},</span>
+        <span class="post-summary__date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-summary__more" href="{{ post.url | prepend: site.baseurl}}">Read More</a>
+    </div>
 </section>

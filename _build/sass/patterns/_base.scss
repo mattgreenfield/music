@@ -79,27 +79,3 @@ a {
     color: grey;
     font-size: .9em;
 }
-
-
-
-// PAGES
-
-body[data-page="blog-home"],
-body[data-page="gig-previews"],
-body[data-page="album-reviews"],
-body[data-page="gig-reviews"] {
-
-    .inner-constraint > h1 {
-        margin-bottom: 1em;
-    }
-
-    .grid__item {
-        font-size: 1rem;
-        section {
-            background-image: none !important;
-            margin-bottom: 20px;
-            border-bottom: 1px solid;
-            padding-bottom: 10px;
-        }
-    }
-}
