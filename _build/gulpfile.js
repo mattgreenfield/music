@@ -16,10 +16,10 @@ var gulp = require('gulp'),
 
     // Image optimizing
     imagemin = require('gulp-imagemin'),
-    // pngquant = require('imagemin-pngquant'),
-    // jpegtran = require('imagemin-jpegtran'),
-    // gifsicle = require('imagemin-gifsicle'),
-    // optipng = require('imagemin-optipng'),
+    pngquant = require('imagemin-pngquant'),
+    jpegtran = require('imagemin-jpegtran'),
+    gifsicle = require('imagemin-gifsicle'),
+    optipng = require('imagemin-optipng'),
 
     // Serving to localhost
     express = require('express'),
@@ -115,7 +115,7 @@ gulp.task('serve', function () {
 
 // Task: Optimize Images
 gulp.task('images', function () {
-    return gulp.src('/images/**')
+    return gulp.src('images/**/*')
 	.pipe(imagemin({
 		progressive: true,
 		svgoPlugins: [{removeViewBox: false}],
