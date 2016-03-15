@@ -3,7 +3,7 @@
     <div class="inner-constraint">
         <h2 class="heading heading--gamma">{{ site.title }}</h2>
         <nav>
-            <ul class="reset-list list--inline">
+            <ul class="reset-list list--inline list--inline--nav">
                 {% for item in site.navigation %}<!--
                 --><li class="menu-item">
                 <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
@@ -15,6 +15,7 @@
         <ul class="reset-list list--inline">
             {% for link in site.social-links %}
             <li>
+                <span class="icon-{{ link.name }}"></span>
                 <a href="{{ link.url }}">{{ link.name }}</a>
             </li>
             {% endfor %}

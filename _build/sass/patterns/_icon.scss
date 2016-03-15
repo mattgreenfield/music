@@ -23,7 +23,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
+.icon-mail:before,
+.icon-email:before {
     content: "\e908";
 }
 .icon-facebook:before {

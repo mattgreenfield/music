@@ -114,15 +114,15 @@ gulp.task('serve', function () {
 // });
 
 // Task: Optimize Images
-// gulp.task('images', function () {
-//     return gulp.src('../assets/img/**')
-// 	.pipe(imagemin({
-// 		progressive: true,
-// 		svgoPlugins: [{removeViewBox: false}],
-// 		use: [pngquant(), jpegtran(), optipng(), gifsicle()]
-// 	}))
-// 	.pipe(gulp.dest('../assets/img/'));
-// });
+gulp.task('images', function () {
+    return gulp.src('/images/**')
+	.pipe(imagemin({
+		progressive: true,
+		svgoPlugins: [{removeViewBox: false}],
+		use: [pngquant(), jpegtran(), optipng(), gifsicle()]
+	}))
+	.pipe(gulp.dest('../assets/images/'));
+});
 
 // Task: a11y
 // gulp.task('a11y', function () {

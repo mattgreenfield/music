@@ -4,3 +4,7 @@
     display: inline-block;
     vertical-align: top;
 }
+
+.list--inline--nav > li {
+    margin-right: $base-spacing-unit / 2;
+}
